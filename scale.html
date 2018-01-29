@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        width: 100%;height:100%;
+    }
+    .bg{
+        width: 100%;height:100%;position: relative;
+    }
+    .bg-main{
+        width: 654px;height:647px;
+        position: absolute;left:0;right:0;top:0;bottom:0;
+        margin:auto;
+        animation: sc 55s infinite linear;
+    }
+    .bg-main>img{
+        width: 100%;height:100%;
+    }
+    @keyframes sc {
+        0%{
+            transform: rotate(0);
+        }
+        25%{
+            transform: rotate(90deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        75%{
+            transform:rotate(270deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+    .prev-bg{
+        width: 750px;height:600px;
+        position: absolute;left:0;
+        bottom:0;top:0;right:0;margin:auto;
+    }
+    .prev-bg>img{
+        position: absolute;
+    }
+    .gai{
+        left:250px;top:210px;
+    }
+    .bian{
+        left:320px;top:220px;
+    }
+    .yi{
+        left:380px;top:250px;
+    }
+    .dian{
+        left:448px;top:215px;
+    }
+    .da{
+        left:165px;top:310px;
+    }
+    .bu{
+        left:245px;top:310px;
+    }
+    .yi_g{
+        left:365px;top:360px;
+    }
+    .yang{
+        left:445px;top:300px;
+    }
+</style>
+<body>
+    <div class="bg">
+        <div class="bg-main">
+            <img src="./img/earth.png" alt="">
+        </div>
+        <div class="prev-bg">
+            <img src="./img/gai.png" alt="" class="gai">
+            <img src="./img/bian.png" alt="" class="bian">
+            <img src="./img/yi.png" alt="" class="yi">
+            <img src="./img/dian.png" alt="" class="dian">
+            <img src="./img/da.png" alt="" class="da">
+            <img src="./img/bu.png" alt="" class="bu">
+            <img src="./img/yi_g.png" alt="" class="yi_g">
+            <img src="./img/yang.png" alt="" class="yang">
+        </div>
+    </div>
+</body>
+</html>
